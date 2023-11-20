@@ -34,7 +34,7 @@ const stocks = reactive([
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center bg-pink-900 w-96 mx-auto mt-4">
-    <StockCard v-for="stock in stocks" :key="stock.name" :stock="stock" />
+  <div class="flex flex-col items-center justify-center bg-pink-900 w-72 mx-auto mt-4">
+    <StockCard v-for="stock in stocks" :key="stock.name" :stock="stock"/>
   </div>
 </template>
