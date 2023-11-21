@@ -2,7 +2,7 @@
 import { reactive } from "vue";
 import StockCard from '@/components/StockCard.vue';
 
-const handleClick = (stock) =>{
+const handleClick = (stock: { url: string; }) =>{
   window.location.href = stock.url;
 }
 
