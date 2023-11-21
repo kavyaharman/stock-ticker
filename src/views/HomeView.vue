@@ -14,7 +14,7 @@ const stocks = reactive([
     peRatio: "2.02",
     updatedDate: "13/10/2023",
     marketClose: true,
-    marketCloseTime: "13/10/2023",
+    marketCloseTime: "12:50PM",
     url: "https://harman.com"
   },
   {
@@ -24,7 +24,7 @@ const stocks = reactive([
     peRatio: "3.02",
     updatedDate: "13/10/2023",
     marketClose: true,
-    marketCloseTime: "13/10/2023",
+    marketCloseTime: "Market Close",
     url: "https://harman.com"
   },
   {
@@ -34,7 +34,7 @@ const stocks = reactive([
     peRatio: "0",
     updatedDate: "13/10/2023",
     marketClose: true,
-    marketCloseTime: "13/10/2023",
+    marketCloseTime: "12:50PM",
     url: "https://harman.com"
   }
 ]);
