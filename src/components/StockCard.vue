@@ -10,7 +10,7 @@ const props = defineProps({
 const getStyles = () =>{
   if(props.stock?.tradeComparision==='high'){
     return {
-      bgColor: "bg-green-100",
+      bgColor: "bg-peGreen",
       svgPath: "M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941",
       textColor: "text-green-600",
       strokeColor: "green"
@@ -18,7 +18,7 @@ const getStyles = () =>{
   }
   else if(props.stock?.tradeComparision==='low'){
     return {
-      bgColor: "bg-red-100",
+      bgColor: "bg-peRed",
       svgPath: "M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181",
       textColor: "text-red-600",
       strokeColor: "red"
@@ -26,7 +26,7 @@ const getStyles = () =>{
   }
   else{
     return {
-      bgColor: "bg-gray-100",
+      bgColor: "bg-peGray",
       svgPath: "M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941",
       textColor: "text-gray-500",
       strokeColor: "gray"
@@ -45,8 +45,8 @@ const getStyles = () =>{
       </div>
 
       <!-- Right Column -->
-      <div :class="[getStyles().bgColor, 'flex ml-4 rounded text-left']">
-          <div class="p-2 w-16">
+      <div :class="[getStyles().bgColor, 'flex ml-4 rounded-md text-left mt-2']">
+          <div class="px-2 pt-1 w-16">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" :stroke-width="1.5" :stroke="getStyles().strokeColor" class="w-4 h-4">
               <path stroke-linecap="round" stroke-linejoin="round" :d="getStyles().svgPath" />
             </svg>
